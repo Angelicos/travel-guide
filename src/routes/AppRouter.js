@@ -6,11 +6,11 @@ import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 import SearchBox from '../components/SearchBox';
 
-export default ({ state }) => (
+export default ({ state, onSearchChange }) => (
   <BrowserRouter>
     <div>
       <Header />
-      <SearchBox />
+      <SearchBox onSearchChange={onSearchChange} />
       <Switch>
         <Route path="/" exact={true}
           render={() => (

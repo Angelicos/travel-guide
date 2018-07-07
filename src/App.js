@@ -32,7 +32,8 @@ class App extends Component {
   }
 
   onSearchChange = (event) => {
-    this.setState({ searchField: event.target.value })        
+    this.setState({ searchField: event.target.value })
+    console.log(this.state.searchField)   
   }
 
   findUniqRegions = (regionList) => {
